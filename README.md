@@ -1,7 +1,7 @@
-# Insallation Instructions
+# Installation Instructions
 
 ```
   $git clone https://github.com/EverWinter23/ocd
   $cd ocd
-  $pip3 install .
+  $sudo pip3 install .
 ```
