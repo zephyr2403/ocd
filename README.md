@@ -6,7 +6,7 @@
 ```
 
 # Usage Instructions
-Invoking **ocd** will open the current working directory.
+Invoking **ocd** will open the current working directory->Code/Python in **nautilus**.
 ```
-  ~/Code/wokrspace/ocd$ocd
+  ~/Code/Python$ocd
 ```
