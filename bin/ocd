@@ -6,12 +6,30 @@ ocd --> open current directory
 Provides an alternative to the command:
     $nautilus .
 '''
-import os
+import os, sys
+import argparse
 
 VERSION = '1.0.0'
  
-def main():
-    os.system('nautilus .')
+def main(argv):
+    parser = argparse.ArgumentParser(
+            description='Open current working directoryin nautilus.',
+            epilog='Made by rishabh mehta.',
+    )
+    
+    # --version
+    parser.add_argument(
+        '--version', 
+        help='display version', 
+        action='version', 
+        version=VERSION,
+        default=os.system('nautilus .')
+    )
+    
+    # default
+    
+    args = parser.parse_args()
+
  
 if __name__ == "__main__":
-    main()
+    main(sys.argv)
